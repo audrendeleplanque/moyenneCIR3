@@ -42,7 +42,6 @@ def averageMaths(transformation, mecaSol, probaStat, analyseDesSignaux, automati
 
     return round(averageMaths, 2)
 
-
 def averageInfo(java, infographie, projetInfo, BDD, reseau, devops):
     try:
         partielJava = findValue(java, "Partiel")
@@ -84,7 +83,6 @@ def averageInfo(java, infographie, projetInfo, BDD, reseau, devops):
     averageInfo = averageJava * 0.22 + averageInfographie * 0.15 + averageProjetInfo * 0.15 + averageBDD * 0.1 + averageReseau * 0.16 + averageDevops * 0.22
 
     return round(averageInfo, 2)
-
 
 def findValue(dict, keyWord):
     for cle, valeur in dict.items():
