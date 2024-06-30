@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9418981d-d99a-4416-83e0-8fcb325e31e8" name="Changes" comment="Ajout de la récupération des notes par contre bug au niveau de l'enchainement de la requete de notes (1ere OK mais suite HS)">
-      <change afterPath="$PROJECT_DIR$/calculator.py" afterDir="false" />
+    <list default="true" id="9418981d-d99a-4416-83e0-8fcb325e31e8" name="Changes" comment="Ajout du calcul de la moyenne de physique en prenant en compte les secondes sessions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/calculator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/searchMark.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchMark.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
@@ -40,6 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.calculator.executor": "Run",
     "Python.main.executor": "Run",
     "Python.searchMark.executor": "Run",
     "Python.test.executor": "Run",
@@ -71,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719611775788</updated>
       <workItem from="1719611784899" duration="7209000" />
-      <workItem from="1719651753000" duration="24542000" />
+      <workItem from="1719651753000" duration="30051000" />
     </task>
     <task id="LOCAL-00001" summary="Login et accès aux notes">
       <option name="closed" value="true" />
@@ -89,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719692681592</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ajout du calcul de la moyenne de physique en prenant en compte les secondes sessions">
+      <option name="closed" value="true" />
+      <created>1719767351855</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719767351856</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,11 +108,13 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Login et accès aux notes" />
     <MESSAGE value="Ajout de la récupération des notes par contre bug au niveau de l'enchainement de la requete de notes (1ere OK mais suite HS)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la récupération des notes par contre bug au niveau de l'enchainement de la requete de notes (1ere OK mais suite HS)" />
+    <MESSAGE value="Ajout du calcul de la moyenne de physique en prenant en compte les secondes sessions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout du calcul de la moyenne de physique en prenant en compte les secondes sessions" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/moyenneCIR3$test.coverage" NAME="test Coverage Results" MODIFIED="1719759649906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moyenneCIR3$test.coverage" NAME="test Coverage Results" MODIFIED="1719783071185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/moyenneCIR3$searchMark.coverage" NAME="searchMark Coverage Results" MODIFIED="1719763692948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/moyenneCIR3$main.coverage" NAME="main Coverage Results" MODIFIED="1719767062076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moyenneCIR3$calculator.coverage" NAME="calculator Coverage Results" MODIFIED="1719783512606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moyenneCIR3$main.coverage" NAME="main Coverage Results" MODIFIED="1719783989666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

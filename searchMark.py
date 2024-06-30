@@ -10,7 +10,7 @@ def searchMark(driver, subject):
     i = "1"
     driver.find_element(By.ID, "form:search-texte").send_keys(subject)
     driver.find_element(By.ID, "form:search").click()
-    time.sleep(5)
+    time.sleep(3.5)
     driver.find_element(By.ID, "form:search-texte").send_keys(Keys.CONTROL, 'a')
     driver.find_element(By.ID, "form:search-texte").send_keys(Keys.DELETE)
 

@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from searchMark import searchMark
-from calculator import averagePhysics
+from calculator import averageMaths, averageInfo
 import time
 
 chrome_options = Options()
@@ -27,12 +27,23 @@ driver.find_element(By.XPATH, '//*[@id="form:sidebar"]/div/div[2]/ul/li[3]/ul/li
 print("Loading marks page")
 time.sleep(5)
 
+
+
 transformation = searchMark(driver, "2324_ISEN_3A_S1_TRANSFO")
 mecaSol = searchMark(driver, "2324_ISEN_CIR3_CNB3_S1_MECASOL")
 probaStat = searchMark(driver, "2324_ISEN_3A_S1_PROBA")
 analyseDesSignaux = searchMark(driver, "2324_ISEN_3A_S2_ANSIGIM")
 automatique = searchMark(driver, "ISEN_3A_S2_AUTO")
 
-print("Moyenne de physique : ", averagePhysics(transformation, mecaSol, probaStat, analyseDesSignaux, automatique))
+print("Moyenne de mathématique : ", averageMaths(transformation, mecaSol, probaStat, analyseDesSignaux, automatique))
+
+java = searchMark(driver, "2324_ISEN_CIR3_S1_JAVA")
+infographie = searchMark(driver, "2324_ISEN_CIR3_S1_INFOGRAPHIE")
+projetInfo = searchMark(driver, "2324_ISEN_CIR3_S1_PROJET_INFO")
+BDD = searchMark(driver, "BDD")
+reseau = searchMark(driver, "2324_ISEN_3A_S2_RSX")
+devops = searchMark(driver, "2324_ISEN_CIR3_S2_DEVOPS")
+
+print("Moyenne d'informatique : ", averageInfo(java, infographie, projetInfo, BDD, reseau, devops))
 
 driver.close()
