@@ -1,3 +1,40 @@
+def averagePhysics(mecaQ, elecNum, projetElec, physiqueSol, ElecAna):
+    try:
+        partielMecaQ = findValue(mecaQ, "Session")
+    except:
+        partielMecaQ = findValue(mecaQ, "Partiel")
+
+    averageMecaQ = findValue(mecaQ, "DS") * 0.3 + findValue(mecaQ, "continu") * 0.2 + partielMecaQ * 0.5
+
+    try:
+        partielElecNum = findValue(elecNum, "session")
+    except:
+        partielElecNum = findValue(elecNum, "Partiel")
+
+    averageElecNum = findValue(elecNum, "TP Microcontroleurs") * 0.2 + findValue(elecNum, "DS") + partielElecNum * 0.4
+
+    print("Moyenne elecNum : ", averageElecNum)
+
+    averageProjetElec = findValue(projetElec, "Projet d'électronique (semaine 4)") * 0.6 + findValue(projetElec, "QCM") * 0.4
+
+    try:
+        partielPhysiqueSol = findValue(physiqueSol, "Partiel")
+    except:
+        partielPhysiqueSol = findValue(physiqueSol, "session")
+
+    averagePhysiqueSol = findValue(physiqueSol, "Contrôle continu") * 0.2 + findValue(physiqueSol, "DS") * 0.3 + partielPhysiqueSol * 0.5
+
+    try:
+        partielElecAna = findValue(ElecAna, "Partiel")
+    except:
+        partielElecAna = findValue(ElecAna, "session")
+
+    averageElecAna = findValue(ElecAna, "TP") * 0.2 + findValue(ElecAna, "DS") * 0.4 + partielElecAna * 0.4
+
+    averagePhysics = averageMecaQ * 0.2 + averageElecNum * 0.2 + averageProjetElec * 0.2 + averagePhysiqueSol * 0.2 + averageElecAna * 0.2
+
+    return round(averagePhysics, 2)
+
 def averageMaths(transformation, mecaSol, probaStat, analyseDesSignaux, automatique):
     try:
         partielTransformation = findValue(transformation, "Partiel")
